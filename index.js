@@ -149,7 +149,5 @@ const extractStyles = async (filenames) => {
 	const sameColorValues = getSameColorValues(extractedStyles);
 	await saveToHTML(sameColorValues, 'output2.html').catch(e => { throw e });
 	  
-	console.log('Done');
-	console.log('__dirname:', __dirname);
 	console.log('blockedStyles:', blockedStyles);
 })();
