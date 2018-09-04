@@ -5,6 +5,7 @@ css values in your project and then put it as one global varibale in one file.
 
 # Start
 npm install
+
 node index.js directory_to_parse
 
 By default 'directory_to_parse' is a directory where index.js located.
