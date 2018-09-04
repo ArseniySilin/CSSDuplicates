@@ -1,0 +1,12 @@
+{
+  "name": "cssduplicates",
+  "version": "1.0.0",
+  "description": "Match all css duplicates",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {},
+  "author": "Silin Arseniy",
+  "license": "ISC"
+}
