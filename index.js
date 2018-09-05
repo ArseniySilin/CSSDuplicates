@@ -7,7 +7,6 @@ const readdir = promisify(fs.readdir);
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
-const config = require('./config.js');
 const { filetypes, styles, filtered } = require('./config.js');
 const stylesheetFiles = new RegExp('\.('+ filetypes.join('|') + ')$');
 const colors = new RegExp('(' + styles.join('|') + '):.+;', 'gi');
@@ -89,19 +88,17 @@ const getSameColorValues = valuesArray => {
 
 					return true;
 				}
+
 				return false;
 			});
 		});
-
 		if (!valuesArray[0].matches.length) {
 			valuesArray.shift();
 		}
-
 		if (valuesArray.length) {
 			getResult(valuesArray, result);
 		}
 	};
-
 	getResult(valuesArray, result);
 
 	return result;
